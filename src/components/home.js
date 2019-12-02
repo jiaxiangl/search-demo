@@ -69,6 +69,7 @@ class DetailDialog extends Component {
     }
 }
 
+// The match option button
 class MatchOption extends Component{
     render(){
         return(
@@ -96,11 +97,12 @@ class SearchFilter extends Component{
                  </Form.Check>
         });
         return (
+            //popup overlay trigger
             <OverlayTrigger rootClose={true} trigger="click" placement={placement} overlay={
                 <Popover id={`popover-positioned-${placement}`}>
                 <Popover.Title as="h3">
-                <Dropdown>
-                    <Dropdown.Toggle variant="success" id="dropdown-basic">
+                <Dropdown className="filter-dropdown">
+                    <Dropdown.Toggle  id="dropdown-basic" >
                         {!!this.props.filterTable?this.props.filterTable:"Select filter"}
                     </Dropdown.Toggle>
                     <Dropdown.Menu>

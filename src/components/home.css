@@ -29,6 +29,11 @@
   background-color: #004065;
 }
 
+.show>.btn-info.dropdown-toggle{
+  background-color: #004065 !important;
+  border:0px;
+}
+
 .main-container{
   margin-left:5%;
   padding:20px;
@@ -49,4 +54,16 @@
     cursor: pointer;
 }
 
+.show>.btn-primary.dropdown-toggle{
+  background-color: #f7f7f7 !important;
+  color:black !important;
+  border:0px;
+}
+
+.filter-dropdown>button,.filter-dropdown>button:hover,.filter-dropdown>button:active ,.filter-dropdown>button:focus{
+  background-color: #f7f7f7;
+  border:0px;
+  color: black;
+  width:100%;
+}
 
