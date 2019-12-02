@@ -1,0 +1,15 @@
+.read-me{
+    margin-left: 5%;
+    padding:20px;
+    text-align: left !important;
+    overflow-y: auto;
+    height: 100vh;
+}
+.bold{
+    font-weight:bold;
+    
+}
+
+.italic{
+    font-style: italic;
+}

@@ -1,0 +1,52 @@
+.search-bar{
+    margin-bottom:10px;
+}
+
+.search-field{
+  display: inline-block !important;
+  width:77% !important;
+  vertical-align: middle;
+}
+
+.search-filter{
+  width: 11%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.search-filter:hover{
+  background-color: white !important;
+  color:black !important;
+}
+
+.match-option{
+  width: 12%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.match-option>button,.match-option>button:hover,.match-option>button:active ,.match-option>button:focus{
+  width:100%;
+  background-color: #004065;
+}
+
+.main-container{
+  margin-left:5%;
+  padding:20px;
+}
+
+.tab-content{
+    height: 88vh;
+    overflow: auto;
+}
+
+
+.modal-body{
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.home-table >tbody> tr{
+    cursor: pointer;
+}
+
+
