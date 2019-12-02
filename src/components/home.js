@@ -16,8 +16,8 @@ import ResultTable from './resultTable'
    //in order to display a better UI, we only couple columns for each table
    //if you want to change the display columns, change config here
     const ticketTitles=["_id","subject","external_id","type","priority","status"]
-    const userTitles=["_id","name","alias"]
-    const organizaitonTitles=["_id","name","domain_names"]
+    const userTitles=["_id","name","alias","active","role"]
+    const organizaitonTitles=["_id","name","domain_names","details"]
 
     const ticketName="ticket";
     const userName="user";
@@ -226,33 +226,36 @@ class Home extends Component{
         const filterColumns=isFilter?this.state.filterColumns.filter((column)=>column.checked).map((column)=>{return column.column}):[];
         const matchOption=this.state.matchOption;
         var result=[];
-        if(matchOption==0){
+        if(matchOption==0)
             search=search.toLowerCase();
-        }
         //!search same with search==undefined
         //clean the search result If there's nothing to search
-        if(!search||search===""){
+        if(!search||search==="")
             return result;
-        }
-    
+            
         objectData.map((obj)=>{
             var objKeys=Object.keys(obj);
             for(var key of objKeys){  
-                 if(isFilter&&!filterColumns.includes(key)){
-                     //only if the filter applys and filter column not select, continue to the next loop
-                     continue;
-                 }      
-                     var val=obj[key];
-                     val=JSON.stringify(val);
-                     if(matchOption==0){
-                         val=val.toLowerCase();
+                //only if the filter applys and filter column not select, continue to the next loop
+                 if(isFilter&&!filterColumns.includes(key)) 
+                     continue;    
+
+                var val=obj[key];
+                if(Array.isArray(val))
+                    val=val.join(",");
+
+                val=JSON.stringify(val);
+                if(matchOption==0){
+                    val=val.toLowerCase();
                  //if find a match add it to the result array and break the currrent row search
-                 //fuzzy
+                 //fuzzy match
                  if(val.match(RegexHelper.escapeRegExp(search))){
                      result.push(obj);
                      break;
                  }
-                }else{
+                }
+                //full match
+                else{
                     if(val===JSON.stringify(search)){
                         result.push(obj);
                         break;
@@ -260,8 +263,6 @@ class Home extends Component{
                 }
             }
         });
-
-
         return result;
     }
 
@@ -326,7 +327,8 @@ class Home extends Component{
         <div className="main-container">
             <div className="search-bar">
                 <MatchOption matchOption={this.state.matchOption} onClick={(i)=>this.handleMatchOption(i)}/>
-                <FormControl type="text" className="search-field" onChange={(event)=>this.findMatch(event.target.value)} onKeyPress={(event)=>this.keyPressed(event)}></FormControl>
+                <FormControl type="text" className="search-field" onChange={(event)=>this.findMatch(event.target.value)} 
+                            onKeyPress={(event)=>this.keyPressed(event)}></FormControl>
                 <SearchFilter onChange={(column)=>{this.handleFilterColumns(column)}} onClick={(name)=>this.handleFilterTable(name)}
                               filterTable={this.state.filterTable} filterColumns={this.state.filterColumns}/>
             </div>

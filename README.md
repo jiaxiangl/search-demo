@@ -18,10 +18,10 @@ Type anything on the search bar at the top will return all the related informtio
 #### `Full/Fuzzy Match`
 On the left of the search bar, there's a drop down button which you can select do full match or fuzzy match.
 #### `Full Match:`
-Search result only return if any column value is exact match with the query string.(e.g. "mar" is not match with "mary")
+Search result only return if any column value is exact match with the query string.(e.g. "mar" is not match with "mary"). In order to search array columns (e.g. tags. ): please use comma delimiter (e.g. California,Palau) to query.
              the full match is *case sensitive*.
 #### `Fuzzy Match:`
-Search result will return if any column value contains the query string.(e.g. "mar" will match with "mary") The fuzzy match is *`not` case sensitive*.
+Search result will return if any column value contains the query string.(e.g. "mar" will match with "mary").   In order to search array columns (e.g. tags. ): please use comma delimiter (e.g. California,Palau) to query The fuzzy match is *`not` case sensitive*. 
 #### `Filter Match`
  On the right side of the search bar, there's a filter drop down to limit result by sepcific 
          table and columns.<br/>
@@ -52,7 +52,7 @@ There're couple features are out of scope for this project, if you like any feat
 In this case, there's only 200 maximum rows per table so I decided to show all of them in one page to make a better user experience.<br/>
 If the data comes from big list. paging is definely a feature need to get implemented to reduce query and loading time.
 #### Optimize UI
-The UI desgined to make the main feature clear and easy to read but there's more feature on the UI that can bring in(e.g. footer, logo).
+The UI desgined to make the main feature clear and easy to read but there's more feature on the UI that can bring in(e.g. footer, logo). <br/>
 #### API
 Again, in order to access more data in the future, build api access functions should be necessarily.
         

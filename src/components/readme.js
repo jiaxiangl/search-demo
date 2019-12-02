@@ -39,11 +39,13 @@ class ReadMe extends Component{
              On the left of the search bar, there's a drop down button which you can select
             do full match or fuzzy match. <br/>
             <span className="bold">Full Match:</span> 
-            Search result only return if any column value is exact match with the query string.
+            Search result only return if any column value is exact match with the query string. 
              (e.g. "mar" is not match with "mary")
+             In order to search array columns (e.g. tags. ): please use comma delimiter (e.g. California,Palau) to query
              the full match is <span className="bold"> case sensitive.</span><br/>
              <span className="bold">Fuzzy Match:</span> 
-            Search result will return if any column value contains the query string.         
+            Search result will return if any column value contains the query string.  
+            In order to search array columns (e.g. tags. ): please use comma delimiter (e.g. California,Palau) to query       
              (e.g. "mar" will match with "mary") The fuzzy match is <span className="bold">not case sensitive.</span>
          </p>
 
