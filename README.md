@@ -6,10 +6,18 @@ Here's some insturctions and main feature list below:
 ### Download project:
 Go to Github and clone with this url: [https://github.com/jiaxiangl/search-demo](https://github.com/jiaxiangl/search-demo) <br/>
 #### Install/Run/Test
-`npm install` Install the dependancy npm package.
-`npm run build`Build the project.
-`npm start` Runs the app in the development mode.
-        
+`npm install` Install the dependancy npm package.<br/>
+`npm run build`Build the project.<br/>
+`npm start` Runs the app in the development mode.<br/>
+
+ ### Tools/Technology
+ `Visual Studio Code`<br>
+`React`<br>
+`BootStrap`<br>
+`Enzyme`<br>
+`FontAwesome`<br>
+`Regex`<br>
+
 ### Main feature
 All the main feature located on home page, here is the detail insturctions:
 #### `General Search`
@@ -46,7 +54,7 @@ each table have n rows, we need to loop each row so the time complexity will be 
 each row have at most 19 columns needs to query, so the complexity will be O(19)=>O(1) <br/>
 There're sepcial columns which type is array (e.g. tags) so we need to use join() and display so the complexity will be O(n)<br/>
 So the total time complexity will be O(nxn)=O(n^2) 
-### Improvment In the future
+### Future development
 There're couple features are out of scope for this project, if you like any feature list or not list below, feel free to contact me at [mailto:ukmyjn456@gmail.com](ukmyjn456@gmail.com)
 #### Paging
 In this case, there's only 200 maximum rows per table so I decided to show all of them in one page to make a better user experience.<br/>
