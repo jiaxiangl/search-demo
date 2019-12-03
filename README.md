@@ -11,12 +11,12 @@ Go to Github and clone with this url: [https://github.com/jiaxiangl/search-demo]
 `npm start` Runs the app in the development mode.<br/>
 
  ### Tools/Technology
- `Visual Studio Code`<br>
-`React`<br>
-`BootStrap`<br>
-`Enzyme`<br>
-`FontAwesome`<br>
-`Regex`<br>
+ `Visual Studio Code`<br/>
+`React`<br/>
+`BootStrap`<br/>
+`Enzyme`<br/>
+`FontAwesome`<br/>
+`Regex`<br/>
 
 ### Main feature
 All the main feature located on home page, here is the detail insturctions:
@@ -25,17 +25,17 @@ Type anything on the search bar at the top will return all the related informtio
     `Note:` If no search data provided: The system will return  *No Data*. 
 #### `Full/Fuzzy Match`
 On the left of the search bar, there's a drop down button which you can select do full match or fuzzy match.
-#### `Full Match:`
+#### Full Match:
 Search result only return if any column value is exact match with the query string.(e.g. "mar" is not match with "mary"). In order to search array columns (e.g. tags. ): please use comma delimiter (e.g. California,Palau) to query.
              the full match is *case sensitive*.
-#### `Fuzzy Match:`
+#### Fuzzy Match:
 Search result will return if any column value contains the query string.(e.g. "mar" will match with "mary").   In order to search array columns (e.g. tags. ): please use comma delimiter (e.g. California,Palau) to query The fuzzy match is *`not` case sensitive*. 
 #### `Filter Match`
  On the right side of the search bar, there's a filter drop down to limit result by sepcific 
          table and columns.<br/>
          ` Note:`  You can select clear filter to clear all the filters in order to apply general search.
-         `Note: `If there's no column selected after selecting the table, the system will return *No Data*. 
-#### View Details
+         `Note: `If there's no column selected after selecting the filter table, the system will return *No Data*. 
+#### `View Details`
 In order to make the UI more user-friendly, the table displays less columns If you want to view all the information for specific row, please click the row on the data table, a popup dialog will display all the details.
 
 ### Cost Analysis
