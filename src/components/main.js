@@ -1,8 +1,8 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Home from './home';
-import ReadMe from './readme'
+import Home from './Home/home';
+import ReadMe from './Readme/readme'
 
 
 //  This is the main js to maintain the router

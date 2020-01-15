@@ -9,6 +9,7 @@ class RegexHelper extends Component{
         }else{
             return "";
         }}
+        
     static fullMatch(str){
        var result=[];
        result.push("/^");

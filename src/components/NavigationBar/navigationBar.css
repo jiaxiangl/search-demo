@@ -1,0 +1,11 @@
+
+/* navigation bar css */
+.nav-bar{
+    padding: 20px 0;
+    width: 5%;
+    height: 100vh;
+    background: #004065;
+    position: fixed;
+    left: 0;
+  }
+  
