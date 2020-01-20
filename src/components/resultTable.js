@@ -6,9 +6,8 @@ class ResultTable extends Component{
     getHeaderItems(titles){ 
         const keys=titles;
         const headerItems=Array(keys.length);
-       keys.map((key)=>{
-        headerItems.push(<th key={key}>{key}</th>);
-       });         
+       keys.map((key)=>
+        headerItems.push(<th key={key}>{key}</th>));         
         return <thead><tr>{headerItems}</tr></thead>;
     }
     //get the body 
