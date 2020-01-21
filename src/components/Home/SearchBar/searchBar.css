@@ -1,0 +1,43 @@
+.match-option>.dropdown-toggle,.match-option>.dropdown-toggle:hover{
+    width: 170px;
+    background-color: #004065;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+    
+  .show>.btn-info.dropdown-toggle{
+    background-color: #004065 !important;
+    border:0px;
+    
+  }
+
+  .search-bar{
+    margin-bottom:10px;
+}
+
+.search-filter{
+    width:200px;
+   
+}
+
+.search-filter.btn{
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.popover{
+    width: 200px;
+}
+
+.filter-selector>.dropdown-toggle
+{
+    width: 100%;
+}
+
+.search-field.form-control{
+  border-color: black;
+  border-left: 0;
+  border-right: 0;
+}
+
+

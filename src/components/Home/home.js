@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import RegexHelper from '../../utility/regexHelper';
+import RegexHelper from '../utility/regexHelper';
 import './home.css'
-import SearchBar from './searchBar'
-import TabField from './tabField'
+import SearchBar from './SearchBar/searchBar'
+import TabField from './TabField/tabField'
 
 
     //load the original data only once 
